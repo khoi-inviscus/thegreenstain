@@ -1,8 +1,10 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import Masonry from 'react-masonry-component'
-import Img from 'gatsby-image'
-import Layout from "../components/layout"
+import React from "react";
+import { Link, graphql } from "gatsby";
+import Masonry from "react-masonry-component";
+import Img from "gatsby-image";
+import Layout from "../components/layout";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -26,9 +28,9 @@ const IndexPage = ({ data }) => (
       ))}
     </Masonry>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
 
 export const query = graphql`
   query IndexQuery {
@@ -48,4 +50,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
